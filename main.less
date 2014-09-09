@@ -5,12 +5,12 @@
  * (https://github.com/adobe/brackets/blob/master/src/extensions/default/DarkTheme/main.less)
  */
 
-/* Define some variables used in multiple places */
+/* Common variables */
 @background: #293134;
 @foreground: #E0E2E4;
+@common: #678CB1;
 
 /* Code Styling */
-
 .CodeMirror, .CodeMirror-scroll {
     background-color: @background;
     color: @foreground;
@@ -35,27 +35,26 @@
 }
 
 /* Obsidian Colours */
-.cm-keyword { color: #93C763; }
-.cm-comment { color: #7D8C93; }
+.cm-keyword { color: #93C763;}
+.cm-comment { color: #7D8C93;}
 .cm-string, .cm-string-2 {color: #EC7600;}
-.cm-variable, .cm-variable-2, .cm-variable-3 { color: #E0E2E4; }
-.cm-tag { color: #678CB1; }
-.cm-attribute { color: #93C763; }
-.cm-property { color: #E0E2E4; }
-.cm-number { color: #FFCD22; }
+.cm-variable, .cm-variable-2, .cm-variable-3 { color: @foreground;}
+.cm-tag { color: #678CB1;}
+.cm-attribute { color: #93C763;}
+.cm-property { color: @foreground;}
+.cm-number { color: #FFCD22;}
 .cm-hr {color: #d89333;}
 .cm-plus {color: #85a300;}
 .cm-operator {color: #E8E2B7:} 
 .cm-bracket {color: #E8E2B7;}
 .cm-error {color: red;}
-.cm-minus {color: #678CB1;}
-.cm-header {color: #678CB1;}
-.cm-link, {color: #678CB1;}
-.cm-rangeinfo {color: #678CB1;}  
-.cm-builtin, .cm-quote {color: #678CB1;}
+.cm-minus {color: @common;}
+.cm-header {color: @common;}
+.cm-link, {color: @common;}
+.cm-rangeinfo {color: @common;}  
+.cm-builtin, .cm-quote {color: @common;}
 
 /* Extra CSS */
-
 .CodeMirror-selectedtext #{
   	background-color: #804000;
 }
@@ -99,17 +98,7 @@
     border-left: 1px solid white;
 }
 
-/*
-    CodeMirror's use of descendant selectors for certain styling causes problems when editors are
-    nested because, for items in the inner editor, the left-hand clause in the selector will now
-    match either the actual containing CodeMirror instance *OR* the outer "host" CodeMirror instance.
-
-    TODO (issue #324): We'll still have problems if editors can be nested more than one level deep,
-    or if any other descendant-selector-driven CM styles can differ between inner & outer editors
-    (potential problem areas include line wrap and coloring theme: basically, anything in codemirror.css
-    that uses a descandant selector where the CSS class name to the left of the space is something
-    other than a vanilla .CodeMirror)
- */
+/*CodeMirror*/
 .CodeMirror {
     .CodeMirror {
         background: transparent;
@@ -142,7 +131,6 @@
 }
 
 /* Non-editor styling */
-
 .image-view,
 .not-editor {
     background-color: @background;
