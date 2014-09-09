@@ -2,7 +2,7 @@
     "name": "spissl.obsidian",
     "title": "Obsidian Theme",
     "description": "Classic Obsidian Theme.",
-    "homepage": "http://github.com/",
+    "homepage": "http://github.com/LegibleEel/Obsidian",
     "version": "1.0.0",
     "author": "Sean <sean@issl.co.uk>",
     "license": "MIT",
@@ -13,5 +13,5 @@
         "file": "main.less",
 		"dark": true
     },
-    "keywords": ["theme, obsidian"]
+    "keywords": ["obsidian, theme"]
 }
