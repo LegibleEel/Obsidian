@@ -1,0 +1,17 @@
+{
+    "name": "spissl.obsidian",
+    "title": "Obsidian Theme",
+    "description": "Classic Obsidian Theme.",
+    "homepage": "http://github.com/",
+    "version": "1.0.0",
+    "author": "Sean <sean@issl.co.uk>",
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=0.42.0"
+    },
+    "theme": {
+        "file": "main.less",
+		"dark": true
+    },
+    "keywords": ["theme, obsidian"]
+}
