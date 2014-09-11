@@ -1,7 +1,7 @@
 Obsidian Brackets theme
 =======
 
-Slightly customised Obsidian Theme, Easy on the eyes, nice colours.
+Slightly customised Obsidian Theme - Based on Obsidian for Komodo by Gizmoh
 
 ## HTML
 ![HTML Screenshot]("https://github.com/LegibleEel/Obsidian/screenshots/html.png")
