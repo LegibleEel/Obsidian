@@ -16,19 +16,7 @@ http://eclipsecolorthemes.org/?view=theme&id=21*/
     color: @foreground;
 }
 
-.CodeMirror-focused .CodeMirror-activeline-background {
-    background: #fff;
-}
-
-&.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
-    box-shadow: inset 15px 0 0 0 #616161;
-}
-
 .CodeMirror-focused .CodeMirror-activeline {
-    .CodeMirror-gutter-elt {
-        background: rgba(0, 0, 0, 0.2);
-        color: #616161;
-    }
     .inline-widget .CodeMirror-gutter-elt {
         color: #616161;    
     }
@@ -63,16 +51,12 @@ http://eclipsecolorthemes.org/?view=theme&id=21*/
 .cm-link {color: @foreground; text-decoration: none;}
 
 /* Extra CSS */
-	
 .CodeMirror-searching {
     background-color: #616161;
-    &.searching-current-match {
-        background-color: #616161;
-    }
 }
 
 .CodeMirror-cursor {
-    border-left: 1px solid #fff !important;
+    border-left: 1px solid @foreground !important;
 }
 
 .CodeMirror-gutters {
@@ -92,7 +76,6 @@ http://eclipsecolorthemes.org/?view=theme&id=21*/
 }
 
 .CodeMirror-matchingbracket, .CodeMirror-matchingtag {
-    /* Ensure visibility against gray inline editor background */
     background-color: #2F393C;
     color: @foreground !important;
 }
@@ -102,50 +85,7 @@ http://eclipsecolorthemes.org/?view=theme&id=21*/
     border-bottom: 1px solid #fff;
 }
 
-/*
-    CodeMirror's use of descendant selectors for certain styling causes problems when editors are
-    nested because, for items in the inner editor, the left-hand clause in the selector will now
-    match either the actual containing CodeMirror instance *OR* the outer "host" CodeMirror instance.
-
-    TODO (issue #324): We'll still have problems if editors can be nested more than one level deep,
-    or if any other descendant-selector-driven CM styles can differ between inner & outer editors
-    (potential problem areas include line wrap and coloring theme: basically, anything in codemirror.css
-    that uses a descandant selector where the CSS class name to the left of the space is something
-    other than a vanilla .CodeMirror)
- */
-.CodeMirror {
-    .CodeMirror {
-        background: transparent;
-    }
-
-    .CodeMirror .CodeMirror-gutters {
-        background: transparent;
-        border-right: none;
-    }
-
-    .CodeMirror .CodeMirror-activeline-background {
-        background: transparent;
-    }
-
-    .CodeMirror .CodeMirror-activeline .CodeMirror-gutter-elt {
-        background: transparent;
-        color: #767676;
-    }
-
-    .CodeMirror-focused .CodeMirror-activeline-background {
-        background: #767676;
-    }
-
-    .CodeMirror-focused .CodeMirror-activeline {
-        .CodeMirror-gutter-elt {
-            background: rgba(0, 0, 0, 0.2);
-            color: #767676;
-        }
-    }
-}
-
 /* Non-editor styling */
-
 .image-view,
 .not-editor {
     background-color: @background;
