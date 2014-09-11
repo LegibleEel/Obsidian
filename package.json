@@ -1,7 +1,7 @@
 {
     "name": "spissl.obsidian",
     "title": "Obsidian Theme",
-    "description": "Classic Obsidian Theme.",
+    "description": "Slightly customised Obsidian Theme, Easy on the eyes, nice colours.",
     "homepage": "http://github.com/LegibleEel/Obsidian",
     "version": "1.0.0",
     "author": "Sean <sean@issl.co.uk>",
@@ -10,7 +10,7 @@
         "brackets": ">=0.42.0"
     },
     "theme": {
-        "file": "main.less",
+        "file": "theme.less",
 		"dark": true
     },
     "keywords": ["obsidian, theme"]

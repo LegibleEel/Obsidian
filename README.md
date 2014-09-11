@@ -1,13 +1,19 @@
 Obsidian Brackets theme
 =======
 
-Classic Obsidian Theme.
+Slightly customised Obsidian Theme, Easy on the eyes, nice colours.
 
 ## HTML
-![HTML Screenshot]("")
+![HTML Screenshot]("https://github.com/LegibleEel/Obsidian/blob/master/screenshots/html.png")
 
 ## CSS
-![CSS Screenshot]("")
+![CSS Screenshot]("https://github.com/LegibleEel/Obsidian/blob/master/screenshots/css.png")
 
 ## JS
-![JS Screenshot]("")
+![JS Screenshot]("https://github.com/LegibleEel/Obsidian/blob/master/screenshots/js.png")
+
+## PHP
+![PHP Screenshot]("https://github.com/LegibleEel/Obsidian/blob/master/screenshots/php.png")
+
+## JAVA
+![JAVA Screenshot]("https://github.com/LegibleEel/Obsidian/blob/master/screenshots/java.png")
