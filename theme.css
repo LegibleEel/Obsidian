@@ -6,8 +6,11 @@
   background-color: #293134;
   color: #e0e2e4;
 }
-.CodeMirror-focused .CodeMirror-activeline .inline-widget .CodeMirror-gutter-elt {
-  color: #616161;
+.CodeMirror-lines {
+  padding: 5px 0;
+}
+.CodeMirror-focused .CodeMirror-activeline .inline-widget {
+  color: #e0e2e4;
 }
 /* Obsidian Colours */
 .cm-atom {
@@ -71,7 +74,7 @@
   color: #e0e2e4;
 }
 .cm-comment {
-  color: #7D8C93;
+  color: #7d8c93;
 }
 .cm-error {
   color: #dc322f;
@@ -98,7 +101,7 @@
   border-right: none;
 }
 .CodeMirror-linenumber {
-  color: #81969A;
+  color: #81969a;
 }
 .CodeMirror .CodeMirror-selected {
   background: #e0e2e4;

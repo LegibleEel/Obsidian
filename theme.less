@@ -1,81 +1,89 @@
 // out: ../dist/theme.css, compress: false, strictMath: true
 /* variables */
-@background: #293134;
-@foreground: #E0E2E4;
-@oblue: #678CB1;
-@oorange: #EC7600;
-@ogreen: #93C763;
-@opurple: #A082BD;
-@ored: #dc322f;
-@oyellow: #FFCD22;
+@alpha: #293134;
+@beta: #E0E2E4;
+@charlie: #678CB1;
+@delta: #EC7600;
+@echo: #93C763;
+@foxtrot: #A082BD;
+@golf: #dc322f;
+@hotel: #FFCD22;
+@india: #616161;
+@juliet: #7D8C93;
+@kilo: #804000;
+@lima: #81969A;
 
 /* Code Styling */
 .CodeMirror, .CodeMirror-scroll {
-    background-color: @background;
-    color: @foreground;
+    background-color: @alpha;
+    color: @beta;
+}
+
+.CodeMirror-lines {
+    padding: 5px 0;
 }
 
 .CodeMirror-focused .CodeMirror-activeline {
-    .inline-widget .CodeMirror-gutter-elt {
-        color: #616161;    
+    .inline-widget {
+        color: @beta;    
     }
 }
 
 /* Obsidian Colours */
-.cm-atom {color: @ogreen;}
-.cm-plus {color: @foreground;}
-.cm-hr {color: @foreground;}
-.cm-number {color: @oyellow;}
-.cm-string {color: @oorange;}
-.cm-string-2 {color: @oorange;}
-.cm-attribute {color: @ogreen;}
-.cm-keyword {color: @ogreen;}
-.cm-tag {color: @oblue;}
-.cm-bracket {color: @oblue;}
-.cm-variable {color: @foreground;}
-.cm-variable-2 {color: @opurple;}
-.cm-variable-3 {color: @foreground;}
-.cm-builtin {color: @ogreen;}
-.cm-quote {color: @foreground;} 
-.cm-def {color: @opurple;}
-.cm-rangeinfo {color: @foreground;}
-.cm-property {color: @foreground;}
-.cm-meta {color: @foreground;}
-.cm-operator {color: @foreground;}
-.cm-comment {color: #7D8C93;}
-.cm-error {color: @ored;}
-.cm-minus {color: @foreground;}
-.cm-header {color: @foreground;}
-.cm-link {color: @foreground; text-decoration: none;}
+.cm-atom {color: @echo;}
+.cm-plus {color: @beta;}
+.cm-hr {color: @beta;}
+.cm-number {color: @hotel;}
+.cm-string {color: @delta;}
+.cm-string-2 {color: @delta;}
+.cm-attribute {color: @echo;}
+.cm-keyword {color: @echo;}
+.cm-tag {color: @charlie;}
+.cm-bracket {color: @charlie;}
+.cm-variable {color: @beta;}
+.cm-variable-2 {color: @foxtrot;}
+.cm-variable-3 {color: @beta;}
+.cm-builtin {color: @echo;}
+.cm-quote {color: @beta;} 
+.cm-def {color: @foxtrot;}
+.cm-rangeinfo {color: @beta;}
+.cm-property {color: @beta;}
+.cm-meta {color: @beta;}
+.cm-operator {color: @beta;}
+.cm-comment {color: @juliet;}
+.cm-error {color: @golf;}
+.cm-minus {color: @beta;}
+.cm-header {color: @beta;}
+.cm-link {color: @beta; text-decoration: none;}
 
 /* Extra CSS */
 .CodeMirror-searching {
-    background-color: #616161;
+    background-color: @india;
 }
 
 .CodeMirror-cursor {
-    border-left: 1px solid @foreground !important;
+    border-left: 1px solid @beta !important;
 }
 
 .CodeMirror-gutters {
-    background-color: @background;
+    background-color: @alpha;
     border-right: none;
 }
 
 .CodeMirror-linenumber {
-    color: #81969A;
+    color: @lima;
 }
 
 .CodeMirror .CodeMirror-selected {
-    background: @foreground;
+    background: @beta;
 }
 .CodeMirror-focused .CodeMirror-selected {
-    background: #804000;
+    background: @kilo;
 }
 
 .CodeMirror-matchingbracket, .CodeMirror-matchingtag {
-    background-color: @foreground;
-    color: @background !important;
+    background-color: @beta;
+    color: @alpha !important;
 }
 
 .CodeMirror-overwrite .CodeMirror-cursor {
@@ -86,9 +94,9 @@
 /* Non-editor styling */
 .image-view,
 .not-editor {
-    background-color: @background;
+    background-color: @alpha;
 }
 
 .view-pane .image-view {
-    color: @foreground;
+    color: @beta;
 }
